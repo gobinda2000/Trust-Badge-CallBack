@@ -13,6 +13,7 @@ api_version = "2025-07"
 scopes = ""
 optional_scopes = [ ]
 use_legacy_install_flow = false
+use_legacy_install_flow = false
 
 [auth]
 redirect_urls = [ ]
