@@ -2,8 +2,11 @@ import { redirect } from "@remix-run/node";
 import { authenticate } from "../shopify.server";
 
 export const loader = async ({ request }) => {
-  await authenticate.admin(request);
-
-  // Redirect to your desired URL after successful authentication
-  return redirect("/app"); // or wherever you want to redirect
+  try {
+    await authenticate.admin(request);
+    return redirect("/app");
+  } catch (error) {
+    // If authentication fails, let Shopify handle the OAuth flow
+    throw error;
+  }
 };
