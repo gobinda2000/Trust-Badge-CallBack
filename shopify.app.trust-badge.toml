@@ -2,7 +2,7 @@
 
 client_id = "a8efd194281bb81257029bf58d0f47fa"
 name = "trust-badge"
-application_url = "https://trust-badge-call-back-ptfk-git-main-usertechies-projects.vercel.app/"
+application_url = "https://trust-badge-call-back-ptfk.vercel.app/"
 embedded = true
 
 [webhooks]

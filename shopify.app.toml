@@ -2,7 +2,7 @@
 
 client_id = "94f1d38f6ef42f035cf175f89cafdd7c"
 name = "Techies-Trust-badge"
-application_url = "https://trust-badge-call-back-ptfk-git-main-usertechies-projects.vercel.app/"
+application_url = "https://trust-badge-call-back-ptfk.vercel.app/"
 embedded = true
 
 [build]
@@ -24,4 +24,4 @@ api_version = "2025-10"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://trust-badge-call-back-ptfk-git-main-usertechies-projects.vercel.app//api/auth" ]
+redirect_urls = [ "https://trust-badge-call-back-ptfk.vercel.app/api/auth" ]
