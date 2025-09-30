@@ -17,9 +17,9 @@ const shopify = shopifyApp({
   sessionStorage: new PrismaSessionStorage(prisma),
   distribution: AppDistribution.AppStore,
   future: {
-    unstable_newEmbeddedAuthStrategy: false, // Try disabling this
+    unstable_newEmbeddedAuthStrategy: true,
+    removeRest: true,
   },
-  isEmbeddedApp: true, // Add this for development
   ...(process.env.SHOP_CUSTOM_DOMAIN
     ? { customShopDomains: [process.env.SHOP_CUSTOM_DOMAIN] }
     : {}),
