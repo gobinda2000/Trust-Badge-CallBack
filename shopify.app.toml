@@ -9,12 +9,12 @@ embedded = true
 automatically_update_urls_on_dev = true
 
 [[webhooks.subscriptions]]
-topics = [ "app/uninstalled" ]
+topics = ["app/uninstalled"]
 uri = "/webhooks/app/uninstalled"
 api_version = "2025-10"
 
 [[webhooks.subscriptions]]
-topics = [ "app/scopes_update" ]
+topics = ["app/scopes_update"]
 uri = "/webhooks/app/scopes_update"
 api_version = "2025-10"
 
